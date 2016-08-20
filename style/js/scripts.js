@@ -521,8 +521,9 @@ $(document).ready(function() {
     var instagramFeed = new Instafeed({
         get: 'user',
         limit: 10,
-        userId: 1215763826,
-        accessToken: '1215763826.f1627ea.dad6ca96bd7642519b573d52c3ef467f',
+        //userId: 1215763826,
+        //accessToken: '1215763826.f1627ea.dad6ca96bd7642519b573d52c3ef467f',
+	clientId: "66ee9b2d7d284c1faf70587180c492bb",
         resolution: 'low_resolution',
         template: '<div class="item"><figure class="icon-overlay"><a href="{{link}}"><img src="{{image}}" /></a></figure></div>',
         after: function() {
@@ -554,9 +555,9 @@ $(document).ready(function() {
     var instagramFeed2 = new Instafeed({
         target: 'instafeed-widget',
         get: 'user',
-        limit: 6,
-        userId: 1215763826,
-        accessToken: '1215763826.f1627ea.dad6ca96bd7642519b573d52c3ef467f',
+        clientId: "66ee9b2d7d284c1faf70587180c492bb",	
+        //userId: 1215763826,
+        //accessToken: '1215763826.f1627ea.dad6ca96bd7642519b573d52c3ef467f',
         resolution: 'low_resolution',
         template: '<div class="item"><figure class="icon-overlay"><a href="{{link}}"><img src="{{image}}" /></a></figure></div>',
         after: function() {
